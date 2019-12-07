@@ -1,0 +1,18 @@
+<h2>Acceder al sistema:</h2>
+<form [formGroup]="loginForm" class="login" novalidate>
+    <mat-form-field appearance="outline">
+        <mat-label>Correo electrónico</mat-label>
+        <input formControlName="email" matInput placeholder="Placeholder" type="email">
+        <mat-icon matSuffix>mail</mat-icon>
+        <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="outline">
+        <mat-label>Contraseña</mat-label>
+        <input formControlName="password" matInput placeholder="*******" type="password">
+        <mat-icon matSuffix>lock</mat-icon>
+        <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" [disabled]="!loginForm.valid" (click)="DoLogin()">Ingresar</button>
+</form>
