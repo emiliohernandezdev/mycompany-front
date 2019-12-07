@@ -11,7 +11,9 @@ import { LoginComponent } from 'src/app/modules/users/login/login.component';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(public auth: AuthService, private dialog: MatDialog) { }
+  constructor(public auth: AuthService, private dialog: MatDialog) { 
+    console.log(this.auth.getSessionStatus())
+  }
 
   ngOnInit() {
   }

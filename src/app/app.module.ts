@@ -10,13 +10,16 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './modules/users/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -24,10 +27,12 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    DashboardModule
   ],
   entryComponents: [
-    LoginComponent
+    LoginComponent,
+    SpinnerComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

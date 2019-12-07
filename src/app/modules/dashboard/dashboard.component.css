@@ -1,0 +1,46 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 1.5vw;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+
+.icon-padding {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.nv{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+  -webkit-box-shadow: 10px 10px 19px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 19px -2px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 19px -2px rgba(0,0,0,0.75);
+}
+
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
